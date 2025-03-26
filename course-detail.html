@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Complete Web Development Bootcamp | LearnHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/E-Learning Platform/course-detail.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>  E-Learning Platform
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="/E-Learning Platform/course-detail.html">My Learning</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                <li class="user-dropdown">
+                    <img src="/Developer Portfolio/virat-kohli.png" alt="User">
+                    <div class="dropdown-content">
+                        <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Detail Section -->
+    <section class="course-detail">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/E-Learning Platform/index.html">Home</a> > 
+                <a href="/E-Learning Platform/course.html">Courses</a> > 
+                <span>Web Development</span>
+            </div>
+            
+            <h1 class="course-title">The Complete 2024 Web Development Bootcamp</h1>
+            
+            <div class="course-main">
+                <div class="course-video">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/8jLOx1hD3_o" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="course-tabs">
+                        <button class="tab-btn active" data-tab="overview">Overview</button>
+                        <button class="tab-btn" data-tab="curriculum">Curriculum</button>
+                        <button class="tab-btn" data-tab="instructor">Instructor</button>
+                        <button class="tab-btn" data-tab="reviews">Reviews</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="overview">
+                        <h3>About This Course</h3>
+                        <p>Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, MongoDB, Web3 and DApps! This comprehensive course covers everything from front-end to back-end development, including modern frameworks and technologies.</p>
+                        
+                        <h3>What You'll Learn</h3>
+                        <ul class="learning-list">
+                            <li><i class="fas fa-check"></i> Build 16 web development projects for your portfolio</li>
+                            <li><i class="fas fa-check"></i> Master HTML5, CSS3, JavaScript ES6, Node.js, React.js, and MongoDB</li>
+                            <li><i class="fas fa-check"></i> Create responsive, accessible, and beautiful layouts</li>
+                            <li><i class="fas fa-check"></i> Build fully-fledged websites and web apps</li>
+                            <li><i class="fas fa-check"></i> Work with GitHub and version control</li>
+                            <li><i class="fas fa-check"></i> Implement user authentication and security features</li>
+                            <li><i class="fas fa-check"></i> Deploy your applications to the cloud</li>
+                        </ul>
+                        
+                        <h3>Requirements</h3>
+                        <ul class="requirements-list">
+                            <li><i class="fas fa-laptop"></i> A computer (Windows, Mac, or Linux)</li>
+                            <li><i class="fas fa-globe"></i> Internet access</li>
+                            <li><i class="fas fa-lightbulb"></i> No prior coding experience needed!</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-content" id="curriculum">
+                        <h3>Course Content</h3>
+                        <div class="accordion">
+                            <!-- Section 1 -->
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <span>Section 1: Frontend Development</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li><i class="far fa-play-circle"></i> HTML Fundamentals (2 hours)</li>
+                                        <li><i class="far fa-play-circle"></i> CSS and Flexbox (3 hours)</li>
+                                        <li><i class="far fa-play-circle"></i> JavaScript Basics (4 hours)</li>
+                                        <li><i class="far fa-play-circle"></i> DOM Manipulation (3 hours)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Section 2 -->
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <span>Section 2: Backend Development</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li><i class="far fa-play-circle"></i> Node.js Introduction (2 hours)</li>
+                                        <li><i class="far fa-play-circle"></i> Express Framework (3 hours)</li>
+                                        <li><i class="far fa-play-circle"></i> MongoDB and Mongoose (4 hours)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- More sections would go here -->
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="instructor">
+                        <div class="instructor-profile">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Angela Yu">
+                            <div class="instructor-info">
+                                <h3>Dr. Angela Yu</h3>
+                                <p class="title">Lead Instructor at The App Brewery</p>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-count">4.9 Instructor Rating</span>
+                                </div>
+                                <div class="stats">
+                                    <span><i class="fas fa-users"></i> 1,234,567 Students</span>
+                                    <span><i class="fas fa-book"></i> 12 Courses</span>
+                                </div>
+                                <p class="bio">Angela is a developer with a passion for teaching. She's the lead instructor at the App Brewery, London's leading Programming Bootcamp. She's helped hundreds of thousands of students learn to code and change their lives by becoming a developer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="reviews">
+                        <h3>Student Feedback</h3>
+                        <div class="overall-rating">
+                            <div class="rating-number">4.9</div>
+                            <div class="rating-stars">★★★★★</div>
+                            <div class="rating-count">(12,345 reviews)</div>
+                        </div>
+                        
+                        <div class="review">
+                            <div class="review-header">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D.">
+                                <div class="reviewer-info">
+                                    <h4>John D.</h4>
+                                    <div class="rating">★★★★★</div>
+                                </div>
+                            </div>
+                            <p class="review-text">This course completely changed my career path. I went from zero coding knowledge to landing my first developer job in 6 months. Angela explains complex concepts in a way that's easy to understand.</p>
+                        </div>
+                        
+                        <div class="review">
+                            <div class="review-header">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sarah K.">
+                                <div class="reviewer-info">
+                                    <h4>Sarah K.</h4>
+                                    <div class="rating">★★★★☆</div>
+                                </div>
+                            </div>
+                            <p class="review-text">Excellent course with comprehensive content. The projects are challenging but rewarding. My only suggestion would be to include more advanced React concepts.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-sidebar">
+                    <div class="sidebar-card">
+                        <div class="course-price">
+                            <span class="current">$12.99</span>
+                            <span class="original">$129.99</span>
+                            <span class="discount">90% off</span>
+                        </div>
+                        <div class="course-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-video"></i>
+                                <span>56 lectures</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>42 hours</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certificate</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block">Enroll Now</button>
+                        <button class="btn btn-outline btn-block">Add to Wishlist</button>
+                        
+                        <div class="includes">
+                            <h4>This course includes:</h4>
+                            <ul>
+                                <li><i class="fas fa-play-circle"></i> 42 hours on-demand video</li>
+                                <li><i class="fas fa-file-alt"></i> 56 articles</li>
+                                <li><i class="fas fa-download"></i> 36 downloadable resources</li>
+                                <li><i class="fas fa-infinity"></i> Full lifetime access</li>
+                                <li><i class="fas fa-mobile-alt"></i> Access on mobile and TV</li>
+                                <li><i class="fas fa-trophy"></i> Certificate of completion</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="share-options">
+                        <h4>Share this course:</h4>
+                        <div class="social-share">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Courses -->
+    <section class="related-courses">
+        <div class="container">
+            <h2>You May Also Like</h2>
+            <div class="course-grid">
+                <!-- Related Course 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="JavaScript Course">
+                        <div class="badge">Bestseller</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>The Complete JavaScript Course 2024</h3>
+                        <p class="instructor">Jonas Schmedtmann</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.8/5 - 11,234 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$14.99</span>
+                            <span class="original-price">$149.99</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Course 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="React Course">
+                        <div class="badge">Hot</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>React - The Complete Guide (incl Hooks, React Router, Redux)</h3>
+                        <p class="instructor">Maximilian Schwarzmüller</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.8/5 - 9,876 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$15.99</span>
+                            <span class="original-price">$159.99</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Course 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Node.js Course">
+                        <div class="badge">New</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Node.js, Express, MongoDB & More: The Complete Bootcamp</h3>
+                        <p class="instructor">Jonas Schmedtmann</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.9/5 - 7,654 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$16.99</span>
+                            <span class="original-price">$169.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>E-learning Platform</h3>
+                    <p>The best platform to learn new skills and advance your career.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Subscribe</h3>
+                    <p>Get the latest updates and course offers</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Your email">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 E-learning Platform. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/E-Learning Platform/couse-detail.js"></script>
+</body>
+</html>

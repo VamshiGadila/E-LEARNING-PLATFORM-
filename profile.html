@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | LearnHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i> E-Learning Platform
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/E-Learning Platform/course.html">Courses</a></li>
+                <li><a href="mylearning.html">My Learning</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                <li class="user-dropdown">
+                    <img src="/Developer Portfolio/virat-kohli.png" alt="User">
+                    <div class="dropdown-content">
+                        <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="profile-container">
+        <div class="container">
+            <!-- Profile Header -->
+            <section class="profile-header">
+                <div class="profile-avatar">
+                    <img src="/Developer Portfolio/virat-kohli.png" alt="User Avatar">
+                    <button class="edit-avatar"><i class="fas fa-camera"></i></button>
+                </div>
+                <div class="profile-info">
+                    <h1>Vamshi Gadila</h1>
+                    <p class="bio">Frontend Developer</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="value">25</span>
+                            <span class="label">Courses</span>
+                        </div>
+                        <div class="stat">
+                            <span class="value">1,234</span>
+                            <span class="label">Points</span>
+                        </div>
+                        <div class="stat">
+                            <span class="value">85%</span>
+                            <span class="label">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="profile-content">
+                <section class="profile-sidebar">
+                    <div class="card">
+                        <h3>Personal Info</h3>
+                        <ul class="info-list">
+                            <li><i class="fas fa-envelope"></i> vamshigadila@gmail.com</li>
+                            <li><i class="fas fa-phone"></i> 976543210</li>
+                            <li><i class="fas fa-map-marker-alt"></i> India </li>
+                            <li><i class="fas fa-user-graduate"></i> Computer Science</li>
+                        </ul>
+                        <button class="btn btn-edit"><i class="fas fa-edit"></i> Edit Profile</button>
+                    </div>
+                    
+                    <div class="card skills-card">
+                        <h3>Skills</h3>
+                        <div class="skill">
+                            <span>Web Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>UI/UX Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Right Column -->
+                <section class="profile-main">
+                    <div class="card enrolled-courses">
+                        <h3>Enrolled Courses</h3>
+                        <div class="course-list">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="card recent-activity">
+                        <h3>Recent Activity</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <i class="fas fa-certificate"></i>
+                                <div class="activity-content">
+                                    <h4>Completed "Advanced CSS"</h4>
+                                    <span class="time">2 hours ago</span>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="profile.js"></script>
+</body>
+</html>

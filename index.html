@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub | Online Learning Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i> E-Learning Platform
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/E-Learning Platform/course.html">Courses</a></li>
+                <li><a href="mylearning.html">My Learning</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                <li class="user-dropdown">
+                    <img src="/Developer Portfolio/virat-kohli.png" alt="User">
+                    <div class="dropdown-content">
+                        <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <a href="courses.html"><i class="fas fa-book"></i> Courses</a>
+        <a href="/E-Learning Platform/mylearning.html"><i class="fas fa-tasks"></i> My Learning</a>
+        <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Learn Without Limits</h1>
+                <p>Start, switch, or advance your career with 5,000+ courses from top instructors</p>
+                <div class="search-bar large">
+                    <input type="text" placeholder="What do you want to learn today?">
+                    <button><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Students learning">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2>Popular Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>120 Courses</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Development</h3>
+                    <p>85 Courses</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Science</h3>
+                    <p>95 Courses</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Design</h3>
+                    <p>110 Courses</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Marketing</h3>
+                    <p>75 Courses</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Business</h3>
+                    <p>90 Courses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section class="featured-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Courses</h2>
+                <a href="/E-Learning Platform/course.html" class="view-all">View All</a>
+            </div>
+            <div class="course-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Development">
+                        <div class="badge">Bestseller</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>The Complete Web Development Bootcamp</h3>
+                        <p class="instructor">Dr. Angela Yu</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.9/5 - 12,345 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$12.99</span>
+                            <span class="original-price">$129.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 56 lectures</span>
+                            <span><i class="fas fa-clock"></i> 42 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Python Programming">
+                        <div class="badge">New</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Python for Data Science and Machine Learning</h3>
+                        <p class="instructor">Jose Portilla</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(4.7/5 - 8,765 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$14.99</span>
+                            <span class="original-price">$149.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 42 lectures</span>
+                            <span><i class="fas fa-clock"></i> 36 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mobile App Development">
+                        <div class="badge">Hot</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Flutter & Dart - The Complete Guide</h3>
+                        <p class="instructor">Maximilian Schwarzmüller</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.8/5 - 6,543 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$11.99</span>
+                            <span class="original-price">$119.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 38 lectures</span>
+                            <span><i class="fas fa-clock"></i> 28 hours</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>LearnHub has completely transformed my career. The courses are well-structured and the instructors are top-notch.</p>
+                    </div>
+                    <div class="student">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                        <div class="student-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Web Developer at Google</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>I went from zero coding knowledge to landing my first developer job in 6 months thanks to LearnHub's courses.</p>
+                    </div>
+                    <div class="student">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        <div class="student-info">
+                            <h4>Michael Chen</h4>
+                            <p>Frontend Developer at Amazon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>The quality of content on LearnHub is unmatched. I've taken courses on other platforms but always come back here.</p>
+                    </div>
+                    <div class="student">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Patel">
+                        <div class="student-info">
+                            <h4>Priya Patel</h4>
+                            <p>Data Scientist at Microsoft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Start Learning Today</h2>
+            <p>Join over 5 million learners worldwide and gain new skills</p>
+            <a href="/E-Learning Platform/course.html" class="btn">Browse All Courses</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>E-learning Platform</h3>
+                    <p>The best platform to learn new skills and advance your career.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Subscribe</h3>
+                    <p>Get the latest updates and course offers</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Your email">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 E-learning platform. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

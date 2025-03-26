@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | LearnHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/E-Learning Platform/styles.css">
+    <link rel="stylesheet" href="/E-Learning Platform/course.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/E-Learning Platform/index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i>  E-Learning Platform
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="/E-Learning Platform/mylearning.html">My Learning</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                <li class="user-dropdown">
+                    <img src="/Developer Portfolio/virat-kohli.png" alt="User">
+                    <div class="dropdown-content">
+                        <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="courses-header">
+        <div class="container">
+            <h1>Browse All Courses</h1>
+            <p>Find the perfect course for your learning journey</p>
+        </div>
+    </section>
+
+    <section class="courses-filter">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="all">All Categories</option>
+                        <option value="web">Web Development</option>
+                        <option value="mobile">Mobile Development</option>
+                        <option value="data">Data Science</option>
+                        <option value="design">Design</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="level">Level:</label>
+                    <select id="level">
+                        <option value="all">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="popular">Most Popular</option>
+                        <option value="newest">Newest</option>
+                        <option value="highest-rated">Highest Rated</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="all-courses">
+        <div class="container">
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Web Development">
+                        <div class="badge">Bestseller</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>The Complete 2024 Web Development Bootcamp</h3>
+                        <p class="instructor">Dr. Angela Yu</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.9/5 - 15,328 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$12.99</span>
+                            <span class="original-price">$129.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 58 lectures</span>
+                            <span><i class="fas fa-clock"></i> 45 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Mobile App Development">
+                        <div class="badge">Hot</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Flutter & Dart - The Complete Guide 2024</h3>
+                        <p class="instructor">Maximilian Schwarzmüller</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.8/5 - 7,642 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$13.99</span>
+                            <span class="original-price">$139.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 40 lectures</span>
+                            <span><i class="fas fa-clock"></i> 30 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Data Science">
+                        <div class="badge">New</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Data Science A-Z: Real-Life Data Exercises</h3>
+                        <p class="instructor">Kirill Eremenko</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(4.6/5 - 9,125 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$15.99</span>
+                            <span class="original-price">$159.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 35 lectures</span>
+                            <span><i class="fas fa-clock"></i> 25 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="UI/UX Design">
+                        <div class="badge">Trending</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>UI/UX Design Specialization</h3>
+                        <p class="instructor">Jose Portilla</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.7/5 - 6,543 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$11.99</span>
+                            <span class="original-price">$119.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 48 lectures</span>
+                            <span><i class="fas fa-clock"></i> 32 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 5 - JavaScript -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="JavaScript">
+                        <div class="badge">Bestseller</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>The Complete JavaScript Course 2024</h3>
+                        <p class="instructor">Jonas Schmedtmann</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.8/5 - 11,234 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$14.99</span>
+                            <span class="original-price">$149.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 52 lectures</span>
+                            <span><i class="fas fa-clock"></i> 40 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Digital Marketing">
+                        <div class="badge">Popular</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>The Complete Digital Marketing Course</h3>
+                        <p class="instructor">Rob Percival</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(4.5/5 - 5,678 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$10.99</span>
+                            <span class="original-price">$109.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 30 lectures</span>
+                            <span><i class="fas fa-clock"></i> 22 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Cybersecurity">
+                        <div class="badge">New</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Cybersecurity for Beginners</h3>
+                        <p class="instructor">Nathan House</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.9/5 - 3,456 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$16.99</span>
+                            <span class="original-price">$169.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 45 lectures</span>
+                            <span><i class="fas fa-clock"></i> 35 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Photography">
+                        <div class="badge">Trending</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Photography Masterclass: Complete Guide</h3>
+                        <p class="instructor">Phil Ebiner</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(4.7/5 - 4,321 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$12.99</span>
+                            <span class="original-price">$129.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 38 lectures</span>
+                            <span><i class="fas fa-clock"></i> 28 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Business">
+                        <div class="badge">Popular</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Business Fundamentals: Management & Marketing</h3>
+                        <p class="instructor">Chris Haroun</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.8/5 - 5,678 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$13.99</span>
+                            <span class="original-price">$139.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 42 lectures</span>
+                            <span><i class="fas fa-clock"></i> 30 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="AI">
+                        <div class="badge">New</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>AI For Everyone: Master the Basics</h3>
+                        <p class="instructor">Andrew Ng</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.9/5 - 8,765 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$14.99</span>
+                            <span class="original-price">$149.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 36 lectures</span>
+                            <span><i class="fas fa-clock"></i> 26 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Graphic Design">
+                        <div class="badge">Bestseller</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>Graphic Design Masterclass - Learn GREAT Design</h3>
+                        <p class="instructor">Lindsay Marsh</p>
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(4.7/5 - 4,567 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$11.99</span>
+                            <span class="original-price">$119.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 40 lectures</span>
+                            <span><i class="fas fa-clock"></i> 29 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Project Management">
+                        <div class="badge">Hot</div>
+                    </div>
+                    <div class="course-info">
+                        <h3>PMP Certification Exam Prep Course</h3>
+                        <p class="instructor">Joseph Phillips</p>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.8/5 - 6,789 reviews)</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">$15.99</span>
+                            <span class="original-price">$159.99</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-video"></i> 50 lectures</span>
+                            <span><i class="fas fa-clock"></i> 38 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+           
+            <div class="pagination">
+                <a href="#" class="page-nav prev"><i class="fas fa-chevron-left"></i> Previous</a>
+                <div class="page-numbers">
+                    <a href="#" class="page-number active">1</a>
+                    <a href="#" class="page-number">2</a>
+                    <a href="#" class="page-number">3</a>
+                    <span class="ellipsis">...</span>
+                    <a href="#" class="page-number">8</a>
+                </div>
+                <a href="#" class="page-nav next">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>E-learning Platform</h3>
+                    <p>The best platform to learn new skills and advance your career.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Subscribe</h3>
+                    <p>Get the latest updates and course offers</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Your email">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> E-learning platform. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
